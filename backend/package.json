@@ -1,0 +1,42 @@
+{
+  "name": "node-react-chat-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "watch": "npm run nodemon",
+    "nodemon": "npm run build:live",
+    "start": "tsc && node ./dist/server.js",
+    "build": "tsc -p .",
+    "build:live": "nodemon --exec \"ts-node\" server.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^14.11.8",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.4",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "knex": "^1.0.2",
+    "morgan": "^1.10.0",
+    "objection": "^3.0.1",
+    "objection-js-soft-delete": "^3.0.1",
+    "pg": "^8.7.3",
+    "socket.io": "^4.4.1",
+    "mysql": "^2.18.1"
+  }
+}
